@@ -1,13 +1,61 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.header {
+  height: 100vh;
+  padding: 40px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url(../src/assets/Netflix\ BG.jpg);
+}
+.loginform {
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+}
+.loginform form{
+  color: white;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  padding:20px  50px;
+}
+
+.loginform{
+  background: rgba(0, 0, 0, 0.5);
+  width: 500px;
+}
+
+.loginform form input {
+  background: transparent;
+  border: 0;
+  height: 45px;
+  width: 350px;
+  border: 1px solid lightgray;
+  padding: 0px  12px;
+  font-size: 18px;
+}
+.loginform form button{
+  width: 375px;
+  background-color: red;
+  color: #fff;
+  border: 0;
+  font-size: 18px;
+  padding:12px;
+  cursor: pointer;
+}
+.loginform form p{
+  padding: 12px;
+  text-align: center;
+  font-size: 18px;
+}
+#line{
+  text-decoration: underline;
+  cursor: pointer;
+  user-select: none;
+}
+.loginform form input :focus{
+  border-color: white;
 }
