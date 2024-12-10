@@ -23,6 +23,12 @@
 - get the video of the nowplayingMovie
 - create the maincontainer that contains the moivetitle , description , videobackground
 - made the trailer autplay using mute
+- built the secondary container
+- built the movie list 
+- built the moviecard
+- built different sections for different category movies and made the ui look better 
+- use many customhooks for the different category of movies
+
 
 
 
