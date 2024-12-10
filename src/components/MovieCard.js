@@ -1,14 +1,33 @@
-import React from 'react'
-import { IMG_CDN_URL } from '../utils/Constants'
+import React, { useState } from 'react';
+import TotalCard from './TotalCard'; 
+import { IMG_CDN_URL } from '../utils/Constants';
 
-const MovieCard = ({img}) => {
+
+const MovieCard = ({ img , movie }) => {
+  const [showTotalCard, setShowTotalCard] = useState(false);
+
+  const handleImageClick = () => {
+    setShowTotalCard(true); 
+  };
+
+  const handleClose = () => {
+    setShowTotalCard(false); 
+  };
+
   return (
     <li>
-      <div className='moviecard'>
-        <img src={IMG_CDN_URL+img}  alt='Movie Poster'/>
-    </div>
-    </li>
-  )
-}
+      <div className="moviecard">
+        <img src={IMG_CDN_URL + img} alt="Movie Poster" onClick={handleImageClick} />
+      </div>
 
-export default MovieCard
+      {showTotalCard && (
+        <div className="total-card-container">
+          <button onClick={handleClose} className="close-button">X</button>
+          <TotalCard  img={img}  movie ={movie}/>
+        </div>
+      )}
+    </li>
+  );
+};
+
+export default MovieCard;

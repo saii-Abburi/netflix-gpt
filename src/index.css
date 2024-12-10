@@ -7,7 +7,6 @@
     sans-serif;
 }
 
-
 .header {
   height: 50px;
   padding: 10px 0px;
@@ -22,7 +21,7 @@
   position: absolute;
   z-index: 3;
 }
-.header img{
+.header img {
   padding-left: 30px;
 }
 .header div {
@@ -113,7 +112,6 @@
   overflow: hidden;
 }
 
-
 .videotitle {
   position: relative;
   width: 100%;
@@ -123,13 +121,12 @@
 .videotitlecontent {
   position: absolute;
   bottom: 19%;
-  left: 1%; 
+  left: 1%;
   z-index: 1;
   width: 40%;
-  color: white; 
+  color: white;
   padding: 2px 20px;
 }
-
 
 .videotitle h1 {
   color: white;
@@ -193,39 +190,105 @@
   cursor: pointer;
 }
 /* ************ Secondary Container  **************** */
-.contentcontainer{
+.contentcontainer {
   background-color: black;
   color: white;
   padding-top: 50px;
 }
-.contentcontainer div:nth-child(1){
+.contentcontainer div:nth-child(1) {
   margin-bottom: 12px;
 }
 
-.moviecard img{
+.moviecard img {
   width: 200px;
   border-radius: 22px;
   transition: all 0.3s;
 }
-.moviescarousel{
+.moviescarousel {
   margin: 0px 200px;
 }
-.moviescardlist ul{
+.moviescardlist ul {
   display: flex;
   gap: 10px;
   overflow: scroll;
   padding: 15px 5px;
   margin-top: 12px;
 }
-.moviescardlist ul::-webkit-scrollbar{
+.moviescardlist ul::-webkit-scrollbar {
   display: none;
 }
-.moviescardlist ul li{
+.moviescardlist ul li {
   list-style: none;
   cursor: pointer;
 }
-.moviecard img:hover{
+.moviecard img:hover {
   transform: scale(1.05);
+}
+
+/* ************** Total card ****************************  */
+.total-card-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 1000;
+}
+
+.totalmoivecard img {
+  width: 550px;
+  aspect-ratio: 10 / 10;
+}
+.totalmoivecard div {
+  position: absolute;
+  padding: 0px 10px;
+  z-index: 200;
+  bottom: 25px;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.totalmoivecard div h1 {
+  color: rgb(229, 9, 20);
+  padding: 4px 0px;
+  font-size: 34px;
+}
+.totalmoivecard div p {
+  margin: 5px 0px;
+  width: 94%;
+}
+.totalmoivecard ul {
+  margin: 0px;
+  padding: 15px 0px;
+}
+.totalmoivecard ul ul {
+  padding: 0px;
+}
+.totalmoivecard div button {
+  background: rgb(229, 9, 20);
+  color: white;
+  margin-top: 15px;
+  letter-spacing: 1px;
+  border: 0;
+  padding: 12px 23px;
+  font-size: 17px;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 7px 10px;
+  cursor: pointer;
+  font-size: 16px;
 }
 
 @media (max-width: 600px) {

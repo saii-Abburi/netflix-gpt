@@ -11,8 +11,8 @@ const MovieList = ({ title, movies }) => {
         <div className="moviescardlist">
           <ul>
             {movies &&
-              movies.map((movie) => (
-                <MovieCard key={movie.id} img={movie.poster_path} />
+              movies.map((movie , index) => (
+                <MovieCard key={movie.id} img={movie.poster_path} movie = {movies[index]}/>
               ))
             }
           </ul>

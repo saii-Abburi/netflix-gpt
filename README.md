@@ -28,6 +28,7 @@
 - built the moviecard
 - built different sections for different category movies and made the ui look better 
 - use many customhooks for the different category of movies
+- created the totalMovieCard for each card in the movie to give full overview of the movie
 
 
 
