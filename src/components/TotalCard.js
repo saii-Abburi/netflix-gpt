@@ -10,7 +10,7 @@ const TotalCard = ({img , movie}) => {
         <div>
         <h1>{movie.original_title}</h1>
         <ul>
-            <li>{movie.release_date.split('-')[0]}</li>
+            <li>{movie?.release_date?.split('-')[0] || ' '}</li>
             <li>{(!movie.adult)?  'U/A 13+' : 'A'}</li>
             <GenreMapping genreIds = {movie.genre_ids}/>
         </ul>

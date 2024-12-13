@@ -30,15 +30,30 @@
   align-items: center;
   gap: 12px;
 }
-.header button {
-  color: red;
-  border-radius: 7px;
+.header select{
+  background: rgba(59, 59, 59 , 0.6);
+  color: white;
+  border: 2px solid rgba(59, 59, 59 , 0.3);
+  padding: 4px 10px;
+  font-size: 18px;
+  border-radius: 11px;
+
+}
+.signout {
+  color: white;
+  background-color: rgb(229, 9, 20);
+  border-radius: 12px;
   font-weight: 500;
   border: 0;
   outline: 0;
+  padding: 12px 15px;
   cursor: pointer;
   font-size: 18px;
-  background-color: transparent;
+}
+.gpt {
+  color: rgb(229, 9, 20);
+  background-color: #fff;
+  padding: 12px;
 }
 .loginform {
   position: absolute;
@@ -103,6 +118,45 @@
   margin: 0;
   padding: 0;
 }
+/* *************** GPT***************** */
+.gptSearchBar {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)),
+    url(../src/assets/Netflix\ BG.jpg);
+}
+.gptSearchBar form{
+  background: rgba(0, 0, 0, 0.8);
+  height: 200px;
+  width: 550px;
+  padding: 12px 23px;
+  display: flex;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+}
+
+.gptsearchinput {
+  flex: 1;
+  height: 35px;
+  padding: 2px 12px;
+  margin-right: 15px;
+  font-size: 18px;
+}
+.gptsearchbtn {
+  color: #fff;
+  background-color: rgb(229, 9, 20);
+  border: 0;
+  outline: 0;
+  font-size: 18px;
+  padding: 8px 18px;
+  border-radius: 9px;
+  cursor: pointer;
+}
 .maincontainer {
   position: relative;
   margin: 0;
@@ -150,14 +204,6 @@
   border-radius: 12px;
   border: none;
 }
-/* .videotitlecontent{
-  position: absolute;
-  bottom: 10%;
-  left: 5px;
-  z-index: 1;
-  width: 40%;
-  padding: 2px 30px;
-} */
 
 .videotitle button:hover {
   transform: scale(1.01);
@@ -239,8 +285,9 @@
 }
 
 .totalmoivecard img {
-  width: 550px;
+  width: 515px;
   aspect-ratio: 10 / 10;
+  height: 550px;
 }
 .totalmoivecard div {
   position: absolute;
