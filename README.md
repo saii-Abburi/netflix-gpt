@@ -32,6 +32,10 @@
 - building the gpt feature
 - built the gpt page 
 - (FEATURE) enabled the multi-language Feature in our GPT search page
+- Integrated the Gemini api and intialised the search feature 
+- added.env files
+- created gptslice using movieslist component
+
 
 
 

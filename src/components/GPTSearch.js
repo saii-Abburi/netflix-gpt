@@ -4,9 +4,9 @@ import GptMovieSuggestions from './GptMovieSuggestions'
 
 const GPTSearch = () => {
   return (
-    <div>
+    <div className='gptPage'>
       <GptSearchBar/>
-      {/* <GptMovieSuggestions/> */}
+      <GptMovieSuggestions/>
     </div>
   )
 }

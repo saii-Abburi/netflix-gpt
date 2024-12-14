@@ -3,7 +3,7 @@ import TotalCard from './TotalCard';
 import { IMG_CDN_URL } from '../utils/Constants';
 
 
-const MovieCard = ({ img , movie }) => {
+const MovieCard = ({ img , movie , imgtotal }) => {
   const [showTotalCard, setShowTotalCard] = useState(false);
 
   const handleImageClick = () => {
@@ -23,7 +23,7 @@ const MovieCard = ({ img , movie }) => {
       {showTotalCard && (
         <div className="total-card-container">
           <button onClick={handleClose} className="close-button">X</button>
-          <TotalCard  img={img}  movie ={movie}/>
+          <TotalCard  img={imgtotal ? imgtotal : img}  movie ={movie}/>
         </div>
       )}
     </li>

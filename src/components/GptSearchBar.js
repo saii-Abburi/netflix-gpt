@@ -30,7 +30,8 @@ const GptSearchBar = () => {
     const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
     const prompt = `Act as a movie recommendation system. Your task is to suggest personalized movie recommendations based on the following input query: Query: ${searchText.current.value}If the query provides only a genre (e.g., sci-fi), suggest the topmost 10 films in that genre. If actors, directors, or specific movies are mentioned, recommend similar movies featuring those individuals or matching their style. Ensure that the recommendations are popular,only movie names no extra message adn dont need the query too, critically acclaimed, or highly rated in their categories. Format the response strictly as:
-                    Movie 1, Movie 2, Movie 3, Movie 4, Movie 5, Movie 6, Movie 7 , Movie 8, Movie 9, Movie 10`;
+                    Movie 1, Movie 2, Movie 3, Movie 4, Movie 5, Movie 6, Movie 7 , Movie 8, Movie 9, Movie 10 
+                    Handle the Error conditions like given genre is not correct or any else in that geneare the top trending movies`;
 
     try {
       const result = await model.generateContent(prompt);

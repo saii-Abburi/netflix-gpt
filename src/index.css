@@ -119,15 +119,21 @@
   padding: 0;
 }
 /* *************** GPT***************** */
+
+.gptPage{
+  /* height: 100%; */
+  min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url(../src/assets/Netflix\ BG.jpg);
+    width: 100%;
+}
 .gptSearchBar {
-  position: absolute;
-  height: 100vh;
-  width: 100vw;
+  height: 60vh;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)),
-    url(../src/assets/Netflix\ BG.jpg);
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)),
+    url(../src/assets/Netflix\ BG.jpg); */
 }
 .gptSearchBar form{
   background: rgba(0, 0, 0, 0.8);
@@ -139,6 +145,7 @@
   justify-content: center;
   align-items: center;
 }
+
 
 .gptsearchinput {
   flex: 1;
@@ -337,9 +344,79 @@
   cursor: pointer;
   font-size: 16px;
 }
+.gptMovieList ul{
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 15px 5px;
+}
+.gptMovieList ul li{
+  list-style: none;
+  cursor: pointer;
+}
+.gptMovieList ul::-webkit-scrollbar{
+  display: none;
+}
+.gptMovieList{
+  margin: 2px 200px;
+}
+
+
+
+.shimmer{
+  width: 200px;
+  border-radius: 22px;
+  transition: all 0.3s;
+  background-color: #f0f0f0;
+}
+.shimmer:hover{
+  transform: scale(1.05);
+}
 
 @media (max-width: 600px) {
   .loginform {
     width: 100%;
+  }
+  .videotitlecontent{
+    width: 100%;
+    bottom: 2px;
+  }
+  .videotitle h1{
+    font-size: 32px;
+  }
+  .header div{
+    flex-direction: column;
+  }
+  .moviescarousel{
+    margin: 0px 20px
+  }
+  .gptSearchBar{
+    padding-top: 100px;
+  }
+  .gptSearchBar form{
+    height: 150px;
+  }
+  .gptMovieList{
+    margin: 0px;
+  }
+  .gptMovieList ul{
+    align-items: center;
+    justify-content: center;
+  }
+  .moviecard img{
+    width: 180px;
+  }
+  .totalmoivecard img{
+    width: 350px;
+  }
+  .total-card-container{
+    width: 350px;
+  }
+  .totalmoivecard ul{
+    width: 80%;
+    overflow: hidden;
+  }
+  .totalmoivecard div p{
+    width: 85%;
   }
 }

@@ -2,7 +2,7 @@ import React from 'react'
 import { IMG_CDN_URL_780} from '../utils/Constants'
 import GenreMapping from './GenreMapping'
 
-const TotalCard = ({img , movie}) => {
+const TotalCard = ({img , movie }) => {
     console.log(movie)
   return (
     <div className='totalmoivecard'>
