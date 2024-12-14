@@ -1,8 +1,23 @@
 import React from 'react'
+import MovieCard from './MovieCard';
 
-const GptMovieSuggestions = () => {
+const GptMovieSuggestions = ({filteredTmdbResults}) => {
+  // console.log(filteredTmdbResults)
   return (
-    <div>GptMovieSuggestions</div>
+    <div>
+      <ul>
+        {filteredTmdbResults.map((movie) => {
+        const firstMovie = movie;
+        return (
+          <MovieCard
+            img={firstMovie.poster_path}
+            key={firstMovie.id}
+            movie={firstMovie}
+          />
+        )
+})}
+      </ul>
+    </div>
   )
 }
 

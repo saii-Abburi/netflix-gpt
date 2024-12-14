@@ -15,4 +15,6 @@ export const SUPPORTED_LANG = [
   {indentifier : 'hin' , language : "hindi"},
   {indentifier : 'spanish' , language : "spanish"}
 
-]
+];
+
+export const OPEN_API_KEY = 'AIzaSyDfD1le7NMmX456GuBd8gQ1mgxDstns8XI'
