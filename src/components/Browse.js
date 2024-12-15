@@ -9,6 +9,8 @@ import useUpcomingMovies from "../hooks/useUpcomingMovies";
 import useTopratedTvShows from "../hooks/useTopratedTvShows";
 import GPTSearch from "./GPTSearch";
 import { useSelector } from "react-redux";
+import FrequentQuestions from "./FrequentQuestions";
+import Footer from "./Footer";
 
 const Browse = () => {
   useNowPlayingMovies();
@@ -27,6 +29,8 @@ const Browse = () => {
         <>
           <MainContainer />
           <SecondaryContainer />
+          <FrequentQuestions/>
+          <Footer/>
         </>
       )}
     </div>
