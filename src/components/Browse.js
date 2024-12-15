@@ -28,9 +28,11 @@ const Browse = () => {
       ) : (
         <>
           <MainContainer />
+          <div className="body">
           <SecondaryContainer />
           <FrequentQuestions/>
           <Footer/>
+          </div>
         </>
       )}
     </div>

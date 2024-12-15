@@ -6,10 +6,10 @@
   font-family: "Poppins", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
     sans-serif;
 }
-body , html{
+
+.body{
   background-color: #0f0f0f;
 }
-
 .header {
   height: 50px;
   padding: 10px 0px;
@@ -229,6 +229,7 @@ body , html{
   width: 100%;
   height: 100%;
   overflow: hidden;
+  z-index: -1;
 }
 
 .videoBackground iframe {
@@ -240,7 +241,6 @@ body , html{
   object-fit: cover;
   aspect-ratio: 16/9;
   border: none;
-  z-index: -1;
   cursor: pointer;
 }
 /* ************ Secondary Container  **************** */
@@ -374,7 +374,7 @@ body , html{
   transform: scale(1.05);
 }
 
-/* ****************************** Footer ************************* */
+/* ****************************** Frequent questions ************************* */
 .frequentQuestions{
 
   color: white;
@@ -422,16 +422,18 @@ body , html{
   margin: 3px 6px;
 }
 
+/* ***************************** Footer******************************* */
 
 
 .footer{
-  margin: 22px 100px;
+  margin: 46px 100px 0px 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: rgba(255, 255, 255, 0.7);
   background-color: #0f0f0f;
 }
+
 .footer div ul li{
   list-style: none;
   cursor: pointer;
